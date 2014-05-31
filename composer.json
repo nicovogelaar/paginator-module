@@ -1,0 +1,21 @@
+{
+    "name": "nicovogelaar/paginator-module",
+    "description": "Paginator module",
+    "license": "MIT",
+    "keywords": [
+        "paginator",
+        "paginator module",
+        "zf2",
+        "zend framework 2",
+        "module"
+    ],
+    "homepage": "https://bitbucket.org/nicovogelaar/paginator-module",
+    "require": {
+        "zendframework/zendframework": ">=2.1.5"
+    },
+    "autoload": {
+        "psr-0": {
+            "Paginator": "src/"
+        }
+    }
+}
