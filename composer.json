@@ -9,7 +9,7 @@
         "zend framework 2",
         "module"
     ],
-    "homepage": "https://bitbucket.org/nicovogelaar/paginator-module",
+    "homepage": "https://github.com/nicovogelaar/paginator-module",
     "require": {
         "zendframework/zendframework": ">=2.1.5"
     },
