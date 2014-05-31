@@ -29,7 +29,7 @@ Installation
 
 #### Enable module
 
-Enabling the module in your `application.config.php` file.
+Enable the module in your `application.config.php` file.
 
 
 ```php
