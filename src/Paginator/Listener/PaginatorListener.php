@@ -24,7 +24,7 @@ class PaginatorListener implements ListenerAggregateInterface
     protected $listeners = array();
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function attach(EventManagerInterface $events)
     {
@@ -46,7 +46,7 @@ class PaginatorListener implements ListenerAggregateInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function detach(EventManagerInterface $events)
     {
