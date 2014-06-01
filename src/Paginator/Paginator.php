@@ -89,14 +89,14 @@ class Paginator implements EventManagerAwareInterface
     /**
      * Filter container
      *
-     * @var array
+     * @var FilterContainer
      */
     protected $filters;
 
     /**
      * Sorting container
      *
-     * @var array
+     * @var SortingContainer
      */
     protected $sortings;
 
@@ -149,7 +149,7 @@ class Paginator implements EventManagerAwareInterface
     }
 
     /**
-     * Creates and returns an instance of the zend paginator
+     * Creates and returns an instance of the Zend Paginator
      * 
      * @return ZendPaginator
      */
@@ -205,7 +205,7 @@ class Paginator implements EventManagerAwareInterface
     }
 
     /**
-     * Get parameter the container
+     * Get the parameter container
      *
      * @return ParameterContainer
      */
