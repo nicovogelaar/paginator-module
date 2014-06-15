@@ -5,11 +5,13 @@
 <?php
 return array(
     // ...
-    'doctrine_paginators' => array(
-        'Example\Paginator\FooPaginator' => 'Example\Entity\Foo', // accepts string or array
-        'Example\Paginator\ProductPaginator' => array(
-            'entity_class' => 'Example\Entity\Product',
-            'repository_method' => 'getProductQueryBuilder', // optional
+    'paginators' => array(
+        'doctrine' => array(
+            'Example\Paginator\FooPaginator' => 'Example\Entity\Foo', // accepts string or array
+            'Example\Paginator\ProductPaginator' => array(
+                'entity_class' => 'Example\Entity\Product',
+                'repository_method' => 'getProductQueryBuilder', // optional
+            ),
         ),
     ),
     // ...
