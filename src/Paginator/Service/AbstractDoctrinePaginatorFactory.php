@@ -28,11 +28,12 @@ class AbstractDoctrinePaginatorFactory implements AbstractFactoryInterface
 
         $config = $serviceLocator->get('config');
 
-        $return = isset($config['doctrine_paginators'])
-            && isset($config['doctrine_paginators'][$requestedName]);
+        $return = isset($config['paginators'])
+            && isset($config['paginators']['doctrine'])
+            && isset($config['paginators']['doctrine'][$requestedName]);
 
         if ($return) {
-            $config = $config['doctrine_paginators'][$requestedName];
+            $config = $config['paginators']['doctrine'][$requestedName];
             if (is_array($config) && !isset($config['entity_class'])) {
                 $return = false;
             }
@@ -52,7 +53,7 @@ class AbstractDoctrinePaginatorFactory implements AbstractFactoryInterface
 
         $config = $serviceLocator->get('config');
 
-        $config = $config['doctrine_paginators'][$requestedName];
+        $config = $config['paginators']['doctrine'][$requestedName];
 
         if (is_array($config)) {
             $entityClass = $config['entity_class'];
