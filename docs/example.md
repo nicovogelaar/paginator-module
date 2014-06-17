@@ -85,8 +85,8 @@ $form->prepare();
             <th><?php echo $this->paginatorSorting('model'); ?></th>
         </tr>
         <tr>
-            <th><th>
-            <th><th>
+            <th></th>
+            <th></th>
             <th><?php echo $this->formInput($form->get('filter')->get('title')); ?></th>
             <th><?php echo $this->formInput($form->get('filter')->get('model')); ?></th>
         </tr>
