@@ -4,7 +4,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.php  MIT License
  * @link      http://nicovogelaar.nl
  */
-namespace Paginator\Adapter;
+namespace Nicovogelaar\Paginator\Adapter;
 
 use Zend\Paginator\Adapter\AdapterInterface as ZendAdapterInterface;
 use Doctrine\ORM\Query;

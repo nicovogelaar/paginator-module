@@ -4,7 +4,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.php  MIT License
  * @link      http://nicovogelaar.nl
  */
-namespace Paginator\View\Helper;
+namespace Nicovogelaar\Paginator\View\Helper;
 
 use Zend\Form\Element;
 use Zend\View\Helper\AbstractHelper;

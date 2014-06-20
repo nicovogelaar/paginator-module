@@ -4,7 +4,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.php  MIT License
  * @link      http://www.digicompanies.com
  */
-namespace Paginator\Form;
+namespace Nicovogelaar\Paginator\Form;
 
 use Zend\Form\Fieldset;
 use Paginator\Container\FilterContainer;

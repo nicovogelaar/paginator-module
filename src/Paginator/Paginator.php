@@ -4,7 +4,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.php  MIT License
  * @link      http://nicovogelaar.nl
  */
-namespace Paginator;
+namespace Nicovogelaar\Paginator;
 
 use Zend\EventManager\EventManager;
 use Zend\EventManager\EventManagerAwareInterface;
