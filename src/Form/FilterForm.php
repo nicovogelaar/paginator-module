@@ -7,7 +7,7 @@
 namespace Nicovogelaar\Paginator\Form;
 
 use Zend\Form\Form;
-use Paginator\Container\FilterContainer;
+use Nicovogelaar\Paginator\Container\FilterContainer;
 
 /**
  * FilterForm

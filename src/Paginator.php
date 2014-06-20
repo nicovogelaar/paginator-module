@@ -11,10 +11,10 @@ use Zend\EventManager\EventManagerAwareInterface;
 use Zend\EventManager\EventManagerInterface;
 use Zend\Paginator\Adapter\AdapterInterface as ZendAdapterInterface;
 use Zend\Paginator\Paginator as ZendPaginator;
-use Paginator\Adapter\AdapterInterface;
-use Paginator\Container\FilterContainer;
-use Paginator\Container\ParameterContainer;
-use Paginator\Container\SortingContainer;
+use Nicovogelaar\Paginator\Adapter\AdapterInterface;
+use Nicovogelaar\Paginator\Container\FilterContainer;
+use Nicovogelaar\Paginator\Container\ParameterContainer;
+use Nicovogelaar\Paginator\Container\SortingContainer;
 
 /**
  * Paginator
@@ -122,16 +122,6 @@ class Paginator implements EventManagerAwareInterface
      */
     public function init()
     {
-    }
-
-    /**
-     * Get the Zend Paginator instance
-     *
-     * @return Paginator
-     */
-    public function __invoke()
-    {
-        return $this->getPaginator();
     }
 
     /**

@@ -11,8 +11,8 @@ use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
 use Doctrine\ORM\Tools\Pagination\Paginator as ORMPaginator;
 use DoctrineORMModule\Paginator\Adapter\DoctrinePaginator as PaginatorAdapter;
-use Paginator\Paginator;
-use Paginator\Container\FilterContainer;
+use Nicovogelaar\Paginator\Paginator;
+use Nicovogelaar\Paginator\Container\FilterContainer;
 
 /**
  * DoctrineAdapter

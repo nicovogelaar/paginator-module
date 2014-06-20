@@ -10,8 +10,8 @@ use Zend\Form\Element;
 use Zend\View\Helper\AbstractHelper;
 use Zend\ServiceManager\ServiceLocatorAwareInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
-use Paginator\Paginator;
-use Paginator\Form\FilterForm;
+use Nicovogelaar\Paginator\Paginator;
+use Nicovogelaar\Paginator\Form\FilterForm;
 
 /**
  * PaginatorHelper
@@ -159,7 +159,7 @@ class PaginatorHelper extends AbstractHelper implements ServiceLocatorAwareInter
             ->get('FormElementManager');
 
         $form = $fm->get(
-            'Paginator\Form\FilterForm',
+            'Nicovogelaar\Paginator\Form\FilterForm',
             array('filters' => $filters)
         );
 

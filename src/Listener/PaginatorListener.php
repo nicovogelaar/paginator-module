@@ -31,14 +31,14 @@ class PaginatorListener implements ListenerAggregateInterface
         $sharedEvents = $events->getSharedManager();
 
         $this->listeners[] = $sharedEvents->attach(
-            'Paginator\Paginator',
+            'Nicovogelaar\Paginator\Paginator',
             'create.pre',
             array($this, 'applyFilters'),
             10
         );
 
         $this->listeners[] = $sharedEvents->attach(
-            'Paginator\Paginator',
+            'Nicovogelaar\Paginator\Paginator',
             'create.pre',
             array($this, 'applySorting'),
             10

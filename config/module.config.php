@@ -7,8 +7,8 @@
 return array(
     'view_helpers' => array(
         'invokables' => array(
-            'paginator' => 'Paginator\View\Helper\PaginatorHelper',
-            'paginatorSorting' => 'Paginator\View\Helper\PaginatorSortingHelper',
+            'paginator' => 'Nicovogelaar\Paginator\View\Helper\PaginatorHelper',
+            'paginatorSorting' => 'Nicovogelaar\Paginator\View\Helper\PaginatorSortingHelper',
         )
     ),
     'view_manager' => array(

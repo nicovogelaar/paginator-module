@@ -7,58 +7,57 @@
 namespace Nicovogelaar\Paginator\Container;
 
 use Countable;
-use Paginator\Exception;
-use Paginator\Paginator;
+use Nicovogelaar\Paginator\Exception;
 
 /**
- * FilterContainer
+ * SortingContainer
  * 
  * @author Nico Vogelaar <nico@nicovogelaar.nl>
  */
-class FilterContainer implements Countable
+class SortingContainer implements Countable
 {
     /**
-     * Filters
+     * Sortings
      * 
      * @var array
      */
-    protected $filters = array();
+    protected $sortings = array();
 
     /**
-     * Add filter
+     * Add sorting
      *
      * @param string $key   Key
      * @param string $field Field
-     * @param string $type  Type
+     * @param string $label Label
      *
-     * @return FilterContainer
+     * @return SortingContainer
      */
-    public function add($key, $field, $type = null)
+    public function add($key, $field, $label = null)
     {
-        if (null === $type) {
-            $type = Paginator::FILTER_TYPE_STARTS_WITH;
+        if (null === $label) {
+            $label = $key;
         }
 
-        $this->filters[$key] = array(
+        $this->sortings[$key] = array(
             'field' => $field,
-            'type' => $type
+            'label' => $label
         );
 
         return $this;
     }
 
     /**
-     * Get filters
+     * Get sortings
      * 
      * @return array
      */
     public function all()
     {
-        return $this->filters;
+        return $this->sortings;
     }
 
     /**
-     * Get filter
+     * Get sorting
      *
      * @param string $key Key
      *
@@ -69,14 +68,14 @@ class FilterContainer implements Countable
     public function get($key)
     {
         if (!$this->has($key)) {
-            throw new Exception('Filter with key "' . $key . '" not exists');
+            throw new Exception('Sorting with key "' . $key . '" not exists');
         }
 
-        return $this->filters[$key];
+        return $this->sortings[$key];
     }
 
     /**
-     * Checks if filter exists
+     * Checks if sorting exists
      *
      * @param string $key Key
      *
@@ -84,16 +83,16 @@ class FilterContainer implements Countable
      */
     public function has($key)
     {
-        return array_key_exists($key, $this->filters);
+        return array_key_exists($key, $this->sortings);
     }
 
     /**
-     * Count filters
+     * Count sortings
      * 
      * @return integer
      */
     public function count()
     {
-        return count($this->filters);
+        return count($this->sortings);
     }
 }

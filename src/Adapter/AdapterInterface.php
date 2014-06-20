@@ -7,7 +7,7 @@
 namespace Nicovogelaar\Paginator\Adapter;
 
 use Zend\Paginator\Adapter\AdapterInterface as ZendAdapterInterface;
-use Paginator\Container\FilterContainer;
+use Nicovogelaar\Paginator\Container\FilterContainer;
 
 /**
  * AdapterInterface

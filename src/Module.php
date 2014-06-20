@@ -35,7 +35,7 @@ class Module implements
         $serviceManager = $e->getApplication()->getServiceManager();
         $eventManager = $e->getApplication()->getEventManager();
 
-        $eventManager->attach($serviceManager->get('Paginator\Listener\PaginatorListener'));
+        $eventManager->attach($serviceManager->get('Nicovogelaar\Paginator\Listener\PaginatorListener'));
     }
 
     /**
@@ -45,7 +45,7 @@ class Module implements
      */
     public function getConfig()
     {
-        return include __DIR__ . '/../../config/module.config.php';
+        return include __DIR__ . '/../config/module.config.php';
     }
 
     /**
@@ -55,7 +55,7 @@ class Module implements
      */
     public function getServiceConfig()
     {
-        return include __DIR__ . '/../../config/service.config.php';
+        return include __DIR__ . '/../config/service.config.php';
     }
 
     /**
@@ -67,7 +67,7 @@ class Module implements
     {
         return array(
             'Zend\Loader\ClassMapAutoloader' => array(
-                __DIR__ . '/../../autoload_classmap.php',
+                __DIR__ . '/../autoload_classmap.php',
             ),
             AutoloaderFactory::STANDARD_AUTOLOADER => array(
                 StandardAutoloader::LOAD_NS => array(

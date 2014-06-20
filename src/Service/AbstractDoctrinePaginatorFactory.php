@@ -10,7 +10,7 @@ use Zend\ServiceManager\ServiceManager;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\ServiceManager\AbstractFactoryInterface;
 use Doctrine\ORM\QueryBuilder;
-use Paginator\Adapter\DoctrineAdapter;
+use Nicovogelaar\Paginator\Adapter\DoctrineAdapter;
 
 /**
  * @author Nico Vogelaar <nico@nicovogelaar.nl>

@@ -8,9 +8,9 @@ namespace Nicovogelaar\Paginator;
 
 return array(
     'abstract_factories' => array(                                          
-        'Paginator\Service\AbstractDoctrinePaginatorFactory',                            
+        'Nicovogelaar\Paginator\Service\AbstractDoctrinePaginatorFactory',                            
     ),
     'invokables' => array(
-        'Paginator\Listener\PaginatorListener' => 'Paginator\Listener\PaginatorListener',
+        'Nicovogelaar\Paginator\Listener\PaginatorListener' => 'Nicovogelaar\Paginator\Listener\PaginatorListener',
     ),
 );

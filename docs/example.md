@@ -23,7 +23,7 @@ return array(
 <?php
 namespace Example\Paginator;
 
-use Paginator\Paginator;
+use Nicovogelaar\Paginator\Paginator;
 
 class ProductPaginator extends Paginator
 {
@@ -68,7 +68,7 @@ class ProductController extends AbstractActionController
 ## View
 ```
 <?php
-$this->paginator($paginator);
+$this->paginator($this->paginator);
 
 $form = $this->paginator()->filterForm();
 $form->prepare();
@@ -92,7 +92,7 @@ $form->prepare();
         </tr>
     </thead>
     <tbody>
-        <?php foreach ($paginator()->getCurrentItems() as $product): ?>
+        <?php foreach ($this->paginator->getPaginator()->getCurrentItems() as $product): ?>
             <tr>
                 <td><a href="#"><?php echo $product->getId(); ?></a></td>
                 <td><?php echo $product->getCreated()->format('d-m-Y'); ?></td>
@@ -106,5 +106,5 @@ $form->prepare();
 <input type="submit" style="position: absolute; left: -9999px"/>
 <?php echo $this->form()->closeTag(); ?>
 
-<?php echo $this->paginationControl($paginator(), 'Sliding', 'slide-paginator'); ?>
+<?php echo $this->paginationControl($this->paginator->getPaginator(), 'Sliding', 'slide-paginator'); ?>
 ```
