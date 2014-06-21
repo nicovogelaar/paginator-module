@@ -122,5 +122,4 @@ class PaginatorListener implements ListenerAggregateInterface
             $adapter->applySorting($sorting['field'], $direction);
         }
     }
-
 }

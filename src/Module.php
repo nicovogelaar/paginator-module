@@ -35,6 +35,7 @@ class Module implements
         $serviceManager = $e->getApplication()->getServiceManager();
         $eventManager = $e->getApplication()->getEventManager();
 
+        $eventManager->attach($serviceManager->get('Nicovogelaar\Paginator\Listener\CrudControllerListener'));
         $eventManager->attach($serviceManager->get('Nicovogelaar\Paginator\Listener\PaginatorListener'));
     }
 

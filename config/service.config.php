@@ -11,6 +11,7 @@ return array(
         'Nicovogelaar\Paginator\Service\AbstractDoctrinePaginatorFactory',                            
     ),
     'invokables' => array(
+        'Nicovogelaar\Paginator\Listener\CrudControllerListener' => 'Nicovogelaar\Paginator\Listener\CrudControllerListener',
         'Nicovogelaar\Paginator\Listener\PaginatorListener' => 'Nicovogelaar\Paginator\Listener\PaginatorListener',
     ),
 );
