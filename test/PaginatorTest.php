@@ -6,8 +6,8 @@
  */
 namespace NicovogelaarTest\Paginator;
 
-use Zend\Paginator\Adapter\ArrayAdapter;
 use PHPUnit_Framework_TestCase as TestCase;
+use Zend\Paginator\Adapter\ArrayAdapter;
 use Nicovogelaar\Paginator\Paginator;
 
 /**
