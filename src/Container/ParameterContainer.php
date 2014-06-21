@@ -6,6 +6,8 @@
  */
 namespace Nicovogelaar\Paginator\Container;
 
+use Nicovogelaar\Paginator\Exception;
+
 /**
  * ParameterContainer
  * 
