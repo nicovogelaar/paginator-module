@@ -1,8 +1,8 @@
 <?php
 /**
- * @copyright Copyright (c) 2014 Digicompanies (http://www.digicompanies.com)
+ * @copyright Copyright (c) 2014 Nico Vogelaar (http://nicovogelaar.nl)
  * @license   http://www.opensource.org/licenses/mit-license.php  MIT License
- * @link      http://www.digicompanies.com
+ * @link      http://nicovogelaar.nl
  */
 namespace Nicovogelaar\Paginator\Form;
 
